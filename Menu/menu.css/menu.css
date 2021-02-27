@@ -20,10 +20,10 @@ header {
 }
 
 .header-left {
-  width: 210px;
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: 'Philosopher', serif;
   margin-left: 10px;
+  color: #fff8cf;
 }
 
 .header-right ul {
@@ -33,18 +33,18 @@ header {
 }
 
 .header-right ul li {
-  font-size: 2rem;
+  font-size: 3rem;
   list-style: none;
   margin-left: 20px;
 }
 
 .header-right ul li a {
   text-decoration: none;
-  color: #432;
+  color: #fff8cf;
 }
 
 #home {
-  background-image: url(../../images/menu-bg.jpg);
+  background-image: url(../../images/strawberry-cake-3975569_1920.jpg);
   background-size: cover;
   background-position: center top;
   min-height: 100vh;
@@ -59,27 +59,47 @@ header {
 
 #home .home-contents h1 {
   font-size: 8rem;
+  color: #fff8cf;
 }
 
 #home .home-contents p {
   font-size: 1.8rem;
+  color: #fff8cf;
 }
 
 .main-contents-wrapper {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 .main-contents-wrapper ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 26px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
   -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  padding: 0 50px;
 }
 
-.main-contents-wrapper ul li {
-  max-width: 300px;
+.main-contents-wrapper ul li img {
+  max-width: 100%;
+  border-radius: 7px;
+}
+
+.main-contents-wrapper ul li p {
+  font-size: 1.7rem;
+}
+
+footer {
+  background-color: #432;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+}
+
+footer p {
+  color: white;
 }
 /*# sourceMappingURL=menu.css.map */
