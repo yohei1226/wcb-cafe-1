@@ -1,6 +1,8 @@
 html,
 body {
   font-size: 62.5%;
+  font-family: 'Philosopher', serif;
+  color: #432;
 }
 
 header {
@@ -11,7 +13,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1100px;
   padding: 0 40px;
   height: 130px;
   line-height: 130px;
@@ -39,5 +41,45 @@ header {
 .header-right ul li a {
   text-decoration: none;
   color: #432;
+}
+
+#home {
+  background-image: url(../../images/menu-bg.jpg);
+  background-size: cover;
+  background-position: center top;
+  min-height: 100vh;
+}
+
+#home .home-contents {
+  max-width: 560px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+#home .home-contents h1 {
+  font-size: 8rem;
+}
+
+#home .home-contents p {
+  font-size: 1.8rem;
+}
+
+.main-contents-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.main-contents-wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 26px;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.main-contents-wrapper ul li {
+  max-width: 300px;
 }
 /*# sourceMappingURL=menu.css.map */

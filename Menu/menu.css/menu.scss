@@ -1,6 +1,8 @@
 html,
 body {
     font-size: 62.5%;
+    font-family: 'Philosopher', serif;
+    color: #432;
 }
 
 // ヘッダー---------------------------------------
@@ -8,7 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1100px;
     padding: 0 40px;
     height: 130px;
     line-height: 130px;
@@ -30,7 +32,8 @@ header {
         font-size: 2rem;
         list-style: none;
         margin-left: 20px;
-        a{
+
+        a {
             text-decoration: none;
             color: #432;
         }
@@ -38,3 +41,41 @@ header {
 }
 
 // ヘッダーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+
+#home {
+    background-image: url(../../images/menu-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+    min-height: 100vh;
+
+    .home-contents {
+        max-width: 560px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 200px;
+
+        h1 {
+            font-size: 8rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.main-contents-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    ul {
+        display: flex;
+        gap: 26px;
+        grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+
+        li {
+            max-width: 300px;
+        }
+    }
+}
