@@ -54,6 +54,7 @@ header {
 .news-big-bg h1 {
   font-size: 8rem;
   margin: 0;
+  display: block;
 }
 
 main {
@@ -121,5 +122,45 @@ footer {
 
 footer p {
   color: white;
+}
+
+@media (max-width: 1100px) {
+  main {
+    display: block;
+  }
+  main article {
+    width: 100%;
+  }
+  main aside {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  header {
+    display: block;
+  }
+  header .header-left {
+    margin: 0 auto;
+  }
+  header .header-right {
+    width: 40rem;
+    margin: 0 auto;
+  }
+  header .header-right ul {
+    padding: 0;
+  }
+  .news-big-bg {
+    height: 500px;
+  }
+  .news-big-bg h1 {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  html, body {
+    font-size: 40%;
+  }
 }
 /*# sourceMappingURL=news.css.map */
